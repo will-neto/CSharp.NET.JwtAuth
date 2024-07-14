@@ -1,0 +1,6 @@
+@CSharp.NET.JwtAuth.BasicAuth_HostAddress = http://localhost:5167
+
+GET {{CSharp.NET.JwtAuth.BasicAuth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
