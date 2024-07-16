@@ -22,6 +22,7 @@ namespace CSharp.NET.JwtAuth.BasicAuth
         private static void Services(WebApplicationBuilder builder)
         {
             // Inclusao do servico Token Service por DI
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             builder.Services.AddScoped<ITokenService, TokenService>();
 
             // Inclusao de servicos basicos para funcionamento da API
